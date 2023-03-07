@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>ARAFIPRO</title>
     <!-- Google tag (gtag.js) -->
     <script
@@ -33,20 +34,36 @@
         </div>
         <nav>
           <ul id="nav_menu" class="nav_menu">
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#products">Products</a></li>
             <!-- <li><a href="#news">News</a></li> -->
-            <!-- <li><a href="#about">About</a></li> -->
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <picture class="main_img">
-      <img src="/image/office-image.jpg" alt="" />
+			<img src="/image/office-image.jpg" alt="" />
     </picture>
     <main class="container">
-      <section id="skills" class="skill">
+			<section id="about" class="about">
+				<h2>About</h2>
+				<div>
+					<img src="/image/human.png" alt="">
+					<p>
+						ポートフォリオをご覧いただきありがとうございます。<br>
+						はじめまして、MarginSaltDeveloperと申します。
+						私は株式投資をきっかけにプログラミングを勉強しています。<br>
+						まずは取引データの管理に役立つと思いPHPとMySQLを学びました。
+						その後、Web開発を本格的に学ぶためにLaravelやHTML、CSSを学びました。
+						またPythonやFlutterにも興味を持ち自己学習を続けています。<br>
+						自分が学んだことをアウトプットすることが大切だと考え、Webアプリやスマートフォンアプリを開発してきました。<br>
+						よろしくお願いいたします。
+					</p>
+				</div>
+			</section>
+			<section id="skills" class="skill">
         <h2>Skills</h2>
         <div>
           <h3>HTML</h3>
@@ -172,10 +189,7 @@
           <dd>News 5</dd>
         </dl>
       </section> -->
-      <!-- <section id="about" class="about">
-        <h2>About</h2>
-      </section> -->
-      <section id="contact" class="contact">
+      <!-- <section id="contact" class="contact">
         <h2>Contact</h2>
         <h3>お問い合わせは以下のフォームから</h3>
         <form action="php/sendmail.php" method="post">
@@ -194,7 +208,7 @@
             <input type="reset" value="リセット" />
           </div>
         </form>
-      </section>
+      </section> -->
     </main>
     <footer id="footer" class="footer">
       <div class="footer_main">
@@ -213,6 +227,5 @@
         <p> © 2023 Copyright : MarginSaltDeveloper </p>
       </div>
     </footer>
-    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

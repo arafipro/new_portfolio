@@ -106,6 +106,29 @@ h1 img {
 	object-fit: cover;
 }
 
+.about {
+	padding: 0 100px;
+}
+
+.about h2 {
+	padding-top: 100px;
+}
+
+.about div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about img {
+	width: 200px;
+	height: 200px;
+}
+
+.about p {
+	width: 700px;
+	text-align: justify;
+}
+
 .skill img {
 	width: 200px;
 	height: 200px;
@@ -283,6 +306,29 @@ h1 img {
 	height: 30px;
 }
 
+.scrollup {
+	position: fixed;
+	right: 2rem;
+	bottom: 8rem;
+	display: flex;
+	border: #333 2px solid;
+	border-radius: .25rem;
+	transition: all .3s;
+}
+
+.scrollup_icon {
+	color: #333;
+	font-size: 40px;
+}
+
+.scrollup:hover {
+	background-color: #333;
+}
+
+.scrollup_icon:hover {
+	color: #fff;
+}
+
 @media screen and (max-width: 1024px) {
 	.header_main li {
 		font-size: 1rem;
@@ -291,6 +337,22 @@ h1 img {
 
 	#menu_btn {
 		display: none;
+	}
+
+	.about div {
+		text-align:center;
+		display: block;
+	}
+
+	.about img {
+		width: 200px;
+		height: 200px;
+		margin-bottom: 40px;
+	}
+
+	.about p {
+		text-align: justify;
+		margin: 0 auto;
 	}
 
 	.skill,
@@ -337,6 +399,23 @@ h1 img {
 	.header_main li a:hover {
 		font-size: 1.1rem;
 		font-weight: 500;
+	}
+
+	.about {
+		padding: 0;
+	}
+
+	.about img {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 40px;
+	}
+
+	.about p {
+		font-size: .7rem;
+		width: 280px;
+		text-align: justify;
+		margin: 0 auto;
 	}
 
 	.skill,
