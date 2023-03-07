@@ -437,6 +437,10 @@ h1 img {
 		grid-area: 1;
 	}
 
+	.skill img {
+		width: 140px;
+	}
+
 	.news dt {
 		width: 100%;
 		border-bottom: 0;
