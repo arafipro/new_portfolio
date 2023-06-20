@@ -329,6 +329,41 @@ h1 img {
 	color: #fff;
 }
 
+#privacy .container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#privacy h1, #privacy h2, #privacy h3 {
+	margin: 20px 0;
+}
+
+#privacy h2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: left;
+	/* border: #000 1px solid; */
+	/* padding: 8px; */
+}
+
+#privacy p {
+	margin: 16px 0;
+}
+
+#privacy ul {
+	margin-left: 40px;
+	list-style: disc;
+}
+
+#privacy ul li {
+	list-style: disc;
+}
+
+#privacy a {
+	text-decoration: underline;
+	color: blue;
+}
+
 @media screen and (max-width: 1024px) {
 	.header_main li {
 		font-size: 1rem;
