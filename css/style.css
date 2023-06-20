@@ -364,6 +364,10 @@ h1 img {
 	color: blue;
 }
 
+#privacy .date {
+	text-align: right;
+}
+
 @media screen and (max-width: 1024px) {
 	.header_main li {
 		font-size: 1rem;
