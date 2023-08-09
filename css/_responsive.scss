@@ -1,0 +1,167 @@
+@media screen and (max-width: 1024px) {
+	.header_main li {
+		font-size: 1rem;
+		padding-left: 20px;
+	}
+
+	// Heroの中央の紹介を非表示
+	.hero .hero_content {
+		display: none;
+	}
+	
+	.about div {
+		text-align:center;
+		display: block;
+	}
+
+	.about img {
+		width: 200px;
+		height: 200px;
+		margin-bottom: 40px;
+	}
+
+	.about p {
+		text-align: justify;
+		margin: 0 auto;
+	}
+
+	.skill,
+	.product {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.skill div,
+	.product div {
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 78px;
+	}
+
+	.skill h2,
+	.product h2 {
+		grid-area: 1 / 1 / 2 / 3;
+	}
+
+	.contact dt {
+		width: 20%;
+	}
+
+	.contact dd {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.header_main {
+		flex-direction: column;
+		height: 100px;
+		padding: 0;
+	}
+
+	header {
+		&.sticky {
+			height: 100px;
+		}
+		
+		.header_main {
+			flex-direction: column;
+			
+			nav .nav_menu {
+				padding-top: 0;
+			}
+		}
+	}
+
+	.header_main li a {
+		margin: 0;
+	}
+
+	.header_main li a:hover {
+		font-size: 1.1rem;
+		font-weight: 500;
+	}
+	
+
+	.about {
+		padding: 0;
+	}
+
+	.about img {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 40px;
+	}
+
+	.about p {
+		font-size: .7rem;
+		width: 280px;
+		text-align: justify;
+		margin: 0 auto;
+	}
+
+	.skill,
+	.product {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.skill div,
+	.product div {
+		/* background-color: #eee; */
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 78px;
+	}
+
+	.skill h2,
+	.product h2 {
+		grid-area: 1;
+	}
+
+	.skill img {
+		width: 140px;
+	}
+
+	.news dt {
+		width: 100%;
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.news dd {
+		width: 100%;
+		padding-top: 0;
+	}
+
+	.contact h3 {
+		font-size: 1rem;
+	}
+
+	.contact dl {
+		flex-direction: column;
+	}
+
+	.contact dt {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	.contact dd {
+		width: 100%;
+	}
+
+	.footer_main p {
+		font-size: .5rem;
+	}
+
+	.footer_menu img {
+		margin-left: 10px;
+		width: 20px;
+		height: 20px;
+	}
+}

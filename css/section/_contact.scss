@@ -1,0 +1,61 @@
+.contact {
+	margin: 0 auto;
+	
+	h2 {
+		margin: 100px 0 40px;
+	}
+	
+	h3 {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	dl {
+		display: flex;
+		flex-wrap: wrap;
+
+		dt,
+		dd {
+			margin-bottom: 10px;
+		}
+		
+		dt {
+			width: 15%;
+		}
+		
+		dd {
+			width: 85%;
+
+			input {
+				width: 100%;
+				border: 1px solid #ccc;
+				padding: 10px;
+			}
+			
+			textarea {
+				width: 100%;
+				border: 1px solid #ccc;
+				padding: 10px;
+				height: 10rem;
+			}
+		}
+	}
+	
+	.btn {
+		text-align: center;
+
+		button {
+			background-color: #333;
+			color: #fff;
+			width: 200px;
+			height: 50px;
+			margin-bottom: 100px;
+			transition: all .3s;
+		
+			&:hover {
+				background-color: #fff;
+				color: #333;
+			}
+		}
+	}
+}
