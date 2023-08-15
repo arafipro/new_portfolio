@@ -53,18 +53,17 @@ section {
 
 header {
   width: 100%;
-  height: 90px;
-  background-color: #e5e5e5;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: none;
+  height: 100vh;
+  background-image: url("../images/office-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 header.sticky {
-  display: block;
+  width: 1200px;
 }
-
-.header_main {
+header #header_main {
+  background-color: #eee;
   display: flex;
   width: 100%;
   height: 90px;
@@ -72,53 +71,41 @@ header.sticky {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 4%;
+  transition: all 0.8s ease;
 }
-.header_main img {
+header #header_main.sticky {
+  position: fixed;
+  padding: 0 16%;
+  box-shadow: 0px 5px 5px #ddd;
+  z-index: 1000;
+}
+header #header_main h1 {
+  margin-right: auto;
+}
+header #header_main img {
   width: 256px;
 }
-.header_main #head_menu_btn {
-  display: none;
-  cursor: pointer;
-}
-.header_main #head_menu_btn img {
-  width: 30px;
-  height: 30px;
-}
-.header_main .nav_menu {
+header #header_main #nav_menu {
   max-width: 100%;
   display: flex;
-  padding: 10px 0;
   align-items: center;
 }
-.header_main li {
+header #header_main li {
   font-size: 1.3rem;
   font-weight: 300;
   padding-left: 40px;
 }
-.header_main li a:hover {
+header #header_main li a:hover {
   font-size: 1.2rem;
   font-weight: 500;
 }
-
-.hero {
-  width: 100%;
-  height: 100vh;
-  background: url("../images/office-image.jpg") no-repeat center center/cover;
-  position: relative;
-  background-attachment: fixed;
-}
-.hero .header_main {
-  background-color: rgba(229, 229, 229, 0.5);
-}
-.hero .header_main #hero_menu_btn {
+header #menu_icon,
+header #close_icon {
   display: none;
   cursor: pointer;
+  font-size: 32px;
 }
-.hero .header_main #hero_menu_btn img {
-  width: 30px;
-  height: 30px;
-}
-.hero .hero_content {
+header .header_content {
   width: 900px;
   justify-content: space-around;
   align-items: center;
@@ -134,16 +121,47 @@ header.sticky {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-.hero .hero_content img {
+header .header_content img {
   width: 180px;
   height: 180px;
 }
-.hero .hero_content p {
+header .header_content p {
   font-size: 20px;
   text-align: center;
 }
-.hero .hero_content p span {
+header .header_content p span {
   font-size: 36px;
+}
+@media screen and (max-width: 1024px) {
+  header #header_main #nav_menu {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background-color: #eee;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateY(-130%);
+    transition: transform 0.5s ease-in;
+    z-index: 100;
+  }
+  header #header_main #nav_menu.active {
+    transform: translateY(0%);
+  }
+  header #header_main #nav_menu li {
+    padding: 60px 0;
+    font-size: 2rem;
+  }
+  header #header_main #nav_menu li a:hover {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  header #menu_icon {
+    display: block;
+  }
+  header .header_content {
+    display: none;
+  }
 }
 
 .about div {
@@ -465,14 +483,14 @@ h2 {
     height: 20px;
   }
 }
-.scrollup {
+.scrollup.active {
   position: fixed;
   right: 2rem;
   bottom: 8rem;
   display: flex;
   border: #333 2px solid;
   border-radius: 0.25rem;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 .scrollup:hover {
   background-color: #333;

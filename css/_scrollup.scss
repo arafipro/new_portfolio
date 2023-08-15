@@ -1,12 +1,14 @@
 .scrollup {
-	position: fixed;
-	right: 2rem;
-	bottom: 8rem;
-	display: flex;
-	border: #333 2px solid;
-	border-radius: .25rem;
-	transition: all .3s;
-
+	&.active {
+		position: fixed;
+		right: 2rem;
+		bottom: 8rem;
+		display: flex;
+		border: #333 2px solid;
+		border-radius: .25rem;
+		transition: all .3s ease;
+	}
+	
 	&:hover {
 		background-color: #333;
 		}
