@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 100;
@@ -167,6 +171,14 @@ header .header_content p span {
     display: none;
   }
 }
+@media screen and (max-width: 500px) {
+  header #header_main img {
+    width: 50%;
+  }
+  header #header_main .nav_icon {
+    font-size: 20px;
+  }
+}
 
 .about div {
   display: flex;
@@ -186,7 +198,7 @@ header .header_content p span {
     display: block;
   }
   .about img {
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
   .about p {
     margin: 0 auto;
@@ -196,6 +208,10 @@ header .header_content p span {
 @media screen and (max-width: 500px) {
   .about {
     padding: 0;
+  }
+  .about img {
+    width: 100px;
+    height: 100px;
   }
   .about p {
     font-size: 0.7rem;
@@ -327,6 +343,7 @@ header .header_content p span {
 }
 .product div div img {
   height: 50%;
+  margin: 0 auto;
 }
 
 .skill div {
@@ -335,10 +352,28 @@ header .header_content p span {
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
-  width: 560px;
+  max-width: 560px;
 }
 .skill div h3 {
   padding-bottom: 20px;
+}
+.skill div img {
+  margin: 0 auto;
+}
+.skill div .api {
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  .skill div {
+    margin: 10px 4%;
+  }
+  .skill div img {
+    max-width: 500px;
+    margin-bottom: 10px;
+  }
+  .skill div .api {
+    display: block;
+  }
 }
 
 h2 {
@@ -374,18 +409,15 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-  .skill,
   .product {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .skill div,
   .product div {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 78px;
   }
-  .skill h2,
   .product h2 {
     grid-area: 1/1/2/3;
   }
@@ -397,24 +429,18 @@ h2 {
   }
 }
 @media screen and (max-width: 500px) {
-  .skill,
   .product {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .skill div,
   .product div {
     /* background-color: #eee; */
     text-align: center;
     margin: 0 auto;
     margin-bottom: 78px;
   }
-  .skill h2,
   .product h2 {
     grid-area: 1;
-  }
-  .skill img {
-    width: 140px;
   }
   .news dt {
     width: 100%;

@@ -1,18 +1,15 @@
 @media screen and (max-width: 1024px) {
-	.skill,
 	.product {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.skill div,
 	.product div {
 		text-align: center;
 		margin: 0 auto;
 		margin-bottom: 78px;
 	}
 
-	.skill h2,
 	.product h2 {
 		grid-area: 1 / 1 / 2 / 3;
 	}
@@ -27,13 +24,11 @@
 }
 
 @media screen and (max-width: 500px) {
-	.skill,
 	.product {
 		display: grid;
 		grid-template-columns: 1fr;
 	}
 
-	.skill div,
 	.product div {
 		/* background-color: #eee; */
 		text-align: center;
@@ -41,13 +36,8 @@
 		margin-bottom: 78px;
 	}
 
-	.skill h2,
 	.product h2 {
 		grid-area: 1;
-	}
-
-	.skill img {
-		width: 140px;
 	}
 
 	.news dt {
