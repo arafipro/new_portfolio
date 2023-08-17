@@ -250,17 +250,28 @@ header .header_content p span {
   width: 80%;
 }
 
-.product {
+.product div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
 }
-.product div {
-  margin: 0 auto 30px;
+.product div:nth-last-child(1) {
+  margin-bottom: 0;
 }
-.product div a {
-  display: inline-block;
+.product div > h3 {
+  grid-area: 1/1/2/4;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.product div div {
+  display: block;
+  margin: 0 auto;
+}
+.product div div a {
   width: 300px;
   height: 400px;
+  display: inline-block;
   text-align: center;
   padding-top: 30px;
   background-color: #fff;
@@ -268,55 +279,40 @@ header .header_content p span {
   border-radius: 20px;
   transition: all 0.5s;
 }
-.product div a:hover {
+.product div div a:hover {
   box-shadow: 10px 5px 5px #ccc;
   transform: translateY(-5px);
 }
-.product h2 {
-  grid-area: 1/1/2/4;
-}
-.product h3,
-.product h4 {
+.product div div h3,
+.product div div h4 {
   margin-bottom: 10px;
 }
-.product h5 {
+.product div div h5 {
   margin-bottom: 30px;
 }
-.product .img {
+.product div div .img {
   display: inline;
 }
-.product p {
+.product div div p {
   font-size: 0.8rem;
   font-weight: 300;
   text-align: justify;
   margin-top: 20px;
 }
-.product img {
+.product div div img {
   height: 50%;
 }
 
-.skill {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.skill h2 {
-  grid-area: 1/1/2/4;
-}
-.skill img {
-  width: 200px;
-  height: 200px;
-  margin: 20px auto;
-}
 .skill div {
-  width: 80%;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 560px;
 }
-.skill p {
-  font-size: 0.8rem;
-  font-weight: 300;
-  text-align: justify;
+.skill div h3 {
+  padding-bottom: 20px;
 }
 
 h2 {
