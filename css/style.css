@@ -221,54 +221,100 @@ header .header_content p span {
 }
 
 .contact {
+  max-width: 600px;
   margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
 }
 .contact h2 {
-  margin: 100px 0 40px;
+  padding-top: 20px;
 }
 .contact h3 {
   text-align: center;
-  margin-bottom: 10px;
 }
-.contact dl {
-  display: flex;
-  flex-wrap: wrap;
+.contact div {
+  margin: 10px;
 }
-.contact dl dt,
-.contact dl dd {
-  margin-bottom: 10px;
+.contact div .input_wrapper {
+  position: relative;
 }
-.contact dl dt {
-  width: 15%;
-}
-.contact dl dd {
-  width: 85%;
-}
-.contact dl dd input {
+.contact div .input_wrapper input {
   width: 100%;
-  border: 1px solid #ccc;
-  padding: 10px;
+  height: 40px;
+  padding: 4px;
+  font-size: 1rem;
 }
-.contact dl dd textarea {
+.contact div .input_wrapper input:not(:-moz-placeholder-shown) + span {
+  font-size: 0.6rem;
+  inset: -0.5rem auto auto 0.5rem;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact div .input_wrapper input:focus + span, .contact div .input_wrapper input:not(:placeholder-shown) + span {
+  font-size: 0.6rem;
+  inset: -0.5rem auto auto 0.5rem;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+.contact div .input_wrapper textarea {
   width: 100%;
-  border: 1px solid #ccc;
-  padding: 10px;
-  height: 10rem;
+  height: 200px;
+  padding: 4px;
+  font-size: 1rem;
+}
+.contact div .input_wrapper textarea:not(:-moz-placeholder-shown) + span {
+  font-size: 0.6rem;
+  inset: -0.5rem auto auto 0.5rem;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact div .input_wrapper textarea:focus + span, .contact div .input_wrapper textarea:not(:placeholder-shown) + span {
+  font-size: 0.6rem;
+  inset: -0.5rem auto auto 0.5rem;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+.contact div .input_wrapper span {
+  position: absolute;
+  inset: 0rem auto auto 0rem;
+  font-size: 0.9rem;
+  padding: 8px;
 }
 .contact .btn {
   text-align: center;
+  padding-bottom: 40px;
 }
 .contact .btn button {
   background-color: #333;
   color: #fff;
-  width: 200px;
-  height: 50px;
-  margin-bottom: 100px;
+  width: 240px;
+  height: 40px;
   transition: all 0.3s;
 }
 .contact .btn button:hover {
   background-color: #fff;
   color: #333;
+}
+@media screen and (max-width: 500px) {
+  .contact {
+    margin: 0 10px;
+  }
+  .contact h3 {
+    font-size: 1rem;
+  }
+  .contact .btn {
+    padding: 20px 0;
+  }
+  .contact .btn button {
+    width: 200px;
+    margin: 10px;
+  }
 }
 
 .news {
@@ -368,7 +414,7 @@ header .header_content p span {
   margin: 10px auto;
   background-color: #fff;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 10px 20px;
   max-width: 560px;
 }
 .skill div h3 {
@@ -393,32 +439,35 @@ header .header_content p span {
   }
 }
 
-.footer {
+footer {
   background-color: #eee;
   align-content: space-between;
 }
-
-.footer_main {
+footer .footer_main {
   margin: 0 auto;
-  max-width: 1200px;
   height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-.footer_main p {
-  text-align: end;
-}
-
-.footer_menu {
+footer .footer_main .footer_menu {
   display: flex;
 }
-
-.footer_menu img {
-  margin-left: 20px;
+footer .footer_main .footer_menu li {
+  margin-right: 20px;
+}
+footer .footer_main .footer_menu li:nth-last-child(1) {
+  margin-right: 0;
+}
+footer .footer_main .footer_menu img {
   width: 30px;
   height: 30px;
+}
+footer .footer_credit {
+  margin-bottom: 40px;
+}
+footer .footer_credit p {
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -451,14 +500,6 @@ header .header_content p span {
   }
   .contact dd {
     width: 100%;
-  }
-  .footer_main p {
-    font-size: 0.5rem;
-  }
-  .footer_menu img {
-    margin-left: 10px;
-    width: 20px;
-    height: 20px;
   }
 }
 .scrollup.active {
