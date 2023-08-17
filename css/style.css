@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-color: #efefef;
 }
 
@@ -146,8 +147,11 @@ header .header_content p span {
     transform: translateY(0%);
   }
   header #header_main #nav_menu li {
-    padding: 60px 0;
+    padding: 20px 0;
     font-size: 2rem;
+  }
+  header #header_main #nav_menu li:nth-last-child(1) {
+    padding-bottom: 60px;
   }
   header #header_main #nav_menu li a:hover {
     font-size: 2rem;
@@ -348,13 +352,6 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-  .header_main li {
-    font-size: 1rem;
-    padding-left: 20px;
-  }
-  .hero .hero_content {
-    display: none;
-  }
   .about div {
     text-align: center;
     display: block;
@@ -391,30 +388,6 @@ h2 {
   }
 }
 @media screen and (max-width: 500px) {
-  body {
-    overflow-x: hidden;
-  }
-  .header_main {
-    flex-direction: column;
-    height: 100px;
-    padding: 0;
-  }
-  header.sticky {
-    height: 100px;
-  }
-  header .header_main {
-    flex-direction: column;
-  }
-  header .header_main nav .nav_menu {
-    padding-top: 0;
-  }
-  .header_main li a {
-    margin: 0;
-  }
-  .header_main li a:hover {
-    font-size: 1.1rem;
-    font-weight: 500;
-  }
   .about {
     padding: 0;
   }
