@@ -1,20 +1,4 @@
 @media screen and (max-width: 1024px) {
-	.about div {
-		text-align:center;
-		display: block;
-	}
-
-	.about img {
-		width: 200px;
-		height: 200px;
-		margin-bottom: 40px;
-	}
-
-	.about p {
-		text-align: justify;
-		margin: 0 auto;
-	}
-
 	.skill,
 	.product {
 		display: grid;
@@ -43,23 +27,6 @@
 }
 
 @media screen and (max-width: 500px) {
-	.about {
-		padding: 0;
-	}
-
-	.about img {
-		width: 100px;
-		height: 100px;
-		margin-bottom: 40px;
-	}
-
-	.about p {
-		font-size: .7rem;
-		width: 280px;
-		text-align: justify;
-		margin: 0 auto;
-	}
-
 	.skill,
 	.product {
 		display: grid;

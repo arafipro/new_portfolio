@@ -177,8 +177,30 @@ header .header_content p span {
   height: 200px;
 }
 .about p {
-  width: 700px;
+  max-width: 700px;
   text-align: justify;
+}
+@media screen and (max-width: 1024px) {
+  .about div {
+    text-align: center;
+    display: block;
+  }
+  .about img {
+    margin-bottom: 40px;
+  }
+  .about p {
+    margin: 0 auto;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about {
+    padding: 0;
+  }
+  .about p {
+    font-size: 0.7rem;
+    padding: 8%;
+  }
 }
 
 .contact {
@@ -352,19 +374,6 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-  .about div {
-    text-align: center;
-    display: block;
-  }
-  .about img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 40px;
-  }
-  .about p {
-    text-align: justify;
-    margin: 0 auto;
-  }
   .skill,
   .product {
     display: grid;
@@ -388,20 +397,6 @@ h2 {
   }
 }
 @media screen and (max-width: 500px) {
-  .about {
-    padding: 0;
-  }
-  .about img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 40px;
-  }
-  .about p {
-    font-size: 0.7rem;
-    width: 280px;
-    text-align: justify;
-    margin: 0 auto;
-  }
   .skill,
   .product {
     display: grid;
