@@ -46,11 +46,36 @@ header {
 			font-size: 1.3rem;
 			font-weight: 300;
 			padding-left: 40px;
+			position: relative;
 
+			.sub_menu {
+				width: 240px;
+				position: absolute;
+				background-color: #eee;
+				left: 20px;
+				display: none;
+				
+				ul{
+					margin: 20px;
+					
+					li {
+						padding: 10px 0;
+						
+						a {
+							font-size: 1.25rem;
+						}
+					}
+				}
+			}
+			
+			&:hover .sub_menu {
+				display: block;
+			}
 			
 			a:hover {
 				font-size: 1.2rem;
 				font-weight: 500;
+				display: block;
 			}
 		}
 		

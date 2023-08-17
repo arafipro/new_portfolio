@@ -99,10 +99,31 @@ header #header_main li {
   font-size: 1.3rem;
   font-weight: 300;
   padding-left: 40px;
+  position: relative;
+}
+header #header_main li .sub_menu {
+  width: 240px;
+  position: absolute;
+  background-color: #eee;
+  left: 20px;
+  display: none;
+}
+header #header_main li .sub_menu ul {
+  margin: 20px;
+}
+header #header_main li .sub_menu ul li {
+  padding: 10px 0;
+}
+header #header_main li .sub_menu ul li a {
+  font-size: 1.25rem;
+}
+header #header_main li:hover .sub_menu {
+  display: block;
 }
 header #header_main li a:hover {
   font-size: 1.2rem;
   font-weight: 500;
+  display: block;
 }
 header #header_main .nav_icon {
   display: none;
@@ -231,6 +252,11 @@ header .header_content p span {
 }
 .contact h3 {
   text-align: center;
+  padding-bottom: 40px;
+}
+.contact h3 a {
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 .contact div {
   margin: 10px;
@@ -344,7 +370,7 @@ header .header_content p span {
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 40px;
 }
-.product .categories:nth-last-child(1) {
+.product .categories:last-child {
   margin-bottom: 0;
 }
 .product .categories .category {
@@ -456,7 +482,7 @@ footer .footer_main .footer_menu {
 footer .footer_main .footer_menu li {
   margin-right: 20px;
 }
-footer .footer_main .footer_menu li:nth-last-child(1) {
+footer .footer_main .footer_menu li:last-child {
   margin-right: 0;
 }
 footer .footer_main .footer_menu img {

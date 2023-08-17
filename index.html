@@ -39,9 +39,19 @@
             <li><a href="#" class="nav_link">Home</a></li>
             <li><a href="#about" class="nav_link">About</a></li>
             <li><a href="#skills" class="nav_link">Skills</a></li>
-            <li><a href="#products" class="nav_link">Products</a></li>
+            <li>
+              <a href="#products" class="nav_link">Products</a>
+              <!-- サブメニュー
+              <div class="sub_menu">
+                <ul>
+                  <li><a href="#hp">ホームページ</a></li>
+                  <li><a href="">Webアプリ</a></li>
+                  <li><a href="#sp">スマートフォンアプリ</a></li>
+                </ul>
+              </div> -->
+            </li>
             <!-- <li><a href="#news" class="nav_link">News</a></li> -->
-            <!-- <li><a href="#contact" class="nav_link">Contact</a></li> -->
+            <li><a href="#contact" class="nav_link">Contact</a></li>
           </ul>
         </nav>
         <div class="nav_icon">
@@ -125,7 +135,7 @@
       <section id="products" class="product jump_point">
         <h2>Products</h2>
         <div class="categories">
-          <h3 class="category">ホームページ</h3>
+          <h3 id="hp" class="category jump_point">ホームページ</h3>
           <div>
             <a href="#" target="_top">
               <h3>ポートフォリオサイト<br />ARAFIPRO</h3>
@@ -158,7 +168,7 @@
           </div>
         </div>
         <div class="categories">
-          <h3 class="category">スマートフォンアプリ</h3>
+          <h3 id="sp" class="category">スマートフォンアプリ</h3>
           <div>
             <a href="https://jpstockminimemo.arafipro.com/" target="_blank">
               <h3>株取引記録アプリ<br />日本株ひとこと投資メモ</h3>
@@ -196,10 +206,11 @@
           <dd>News 5</dd>
         </dl>
       </section> -->
-      <!-- <section id="contact" class="contact">
+      <section id="contact" class="contact">
         <h2>Contact</h2>
-        <h3>お問い合わせは以下のフォームから</h3>
-        <form action="php/sendmail.php" method="post">
+        <h3>お問い合わせは<a href="mailto:contact@arafipro.com">contact@arafipro.com</a>へ</h3>
+        <!-- <h3>お問い合わせは以下のフォームから</h3> -->
+        <!-- <form action="./php/sendmail.php" method="post">
           <div>
             <div class="input_wrapper">
               <input type="text" placeholder=" " id="name" name="name" required />
@@ -222,8 +233,8 @@
             <button type="submit">送信</button>
             <button type="reset">リセット</button>
           </div>
-        </form>
-      </section> -->
+        </form> -->
+      </section>
     </main>
     <footer id="footer" class="footer">
       <div class="footer_main">
