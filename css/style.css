@@ -32,6 +32,7 @@ h2 {
   font-size: 2rem;
   font-weight: 100;
   text-align: center;
+  margin: 100px 0 40px;
 }
 
 h3 {
@@ -292,25 +293,25 @@ header .header_content p span {
   width: 80%;
 }
 
-.product div {
+.product .categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 40px;
 }
-.product div:nth-last-child(1) {
+.product .categories:nth-last-child(1) {
   margin-bottom: 0;
 }
-.product div > h3 {
+.product .categories .category {
   grid-area: 1/1/2/4;
   font-size: 1.2rem;
   margin-bottom: 20px;
   text-align: center;
 }
-.product div div {
+.product .categories div {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
-.product div div a {
+.product .categories div a {
   width: 300px;
   height: 400px;
   display: inline-block;
@@ -321,29 +322,45 @@ header .header_content p span {
   border-radius: 20px;
   transition: all 0.5s;
 }
-.product div div a:hover {
+.product .categories div a:hover {
   box-shadow: 10px 5px 5px #ccc;
   transform: translateY(-5px);
 }
-.product div div h3,
-.product div div h4 {
+.product .categories div h3,
+.product .categories div h4 {
   margin-bottom: 10px;
 }
-.product div div h5 {
+.product .categories div h5 {
   margin-bottom: 30px;
 }
-.product div div .img {
+.product .categories div .img {
   display: inline;
 }
-.product div div p {
+.product .categories div p {
   font-size: 0.8rem;
   font-weight: 300;
   text-align: justify;
   margin-top: 20px;
 }
-.product div div img {
+.product .categories div img {
   height: 50%;
   margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .product .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product .categories .category {
+    grid-area: 1/1/2/3;
+  }
+}
+@media screen and (max-width: 500px) {
+  .product .categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .skill div {
@@ -376,10 +393,6 @@ header .header_content p span {
   }
 }
 
-h2 {
-  margin: 100px 0 40px;
-}
-
 .footer {
   background-color: #eee;
   align-content: space-between;
@@ -409,18 +422,6 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-  .product {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .product div {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 78px;
-  }
-  .product h2 {
-    grid-area: 1/1/2/3;
-  }
   .contact dt {
     width: 20%;
   }
@@ -429,19 +430,6 @@ h2 {
   }
 }
 @media screen and (max-width: 500px) {
-  .product {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .product div {
-    /* background-color: #eee; */
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 78px;
-  }
-  .product h2 {
-    grid-area: 1;
-  }
   .news dt {
     width: 100%;
     border-bottom: 0;

@@ -1,19 +1,4 @@
 @media screen and (max-width: 1024px) {
-	.product {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.product div {
-		text-align: center;
-		margin: 0 auto;
-		margin-bottom: 78px;
-	}
-
-	.product h2 {
-		grid-area: 1 / 1 / 2 / 3;
-	}
-
 	.contact dt {
 		width: 20%;
 	}
@@ -24,22 +9,6 @@
 }
 
 @media screen and (max-width: 500px) {
-	.product {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-
-	.product div {
-		/* background-color: #eee; */
-		text-align: center;
-		margin: 0 auto;
-		margin-bottom: 78px;
-	}
-
-	.product h2 {
-		grid-area: 1;
-	}
-
 	.news dt {
 		width: 100%;
 		border-bottom: 0;
