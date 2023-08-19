@@ -244,15 +244,15 @@ header .header_content p span {
 .contact {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #fff;
-  border-radius: 20px;
 }
 .contact h2 {
   padding-top: 20px;
 }
 .contact h3 {
   text-align: center;
-  padding-bottom: 40px;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 20px;
 }
 .contact h3 a {
   text-decoration: underline;
