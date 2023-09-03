@@ -12,7 +12,7 @@ const obs = new IntersectionObserver(
     // スクロールアップボタンの表示
     scrollupBtn.classList.toggle("active", !entries[0].isIntersecting);
   },
-  { rootMargin: "1000px 0px 0px 0px" }
+  // { rootMargin: "1000px 0px 0px 0px" }
 );
 obs.observe(scroll);
 
